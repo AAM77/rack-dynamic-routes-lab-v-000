@@ -25,6 +25,4 @@ class Application
     resp.finish
   end #call
 
-  end #search
-
 end #Application
