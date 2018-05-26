@@ -13,7 +13,8 @@ class Application
       if !item.nil?
         resp.write item.price
       else
-        resp.write "We don't have that item"
+        resp.write "We don't have that item."
+        resp.status = 404
     else
       resp.write "Page Not Found"
       resp.status = 404
