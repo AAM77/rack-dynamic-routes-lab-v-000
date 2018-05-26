@@ -18,7 +18,7 @@ class Application
       end #if !item.nil?
 
     else
-      resp.write "Page Not Found"
+      resp.write "Route Not Found"
       resp.status = 404
     end #if path match /items/
 
