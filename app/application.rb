@@ -15,7 +15,6 @@ class Application
         resp.status = 400
       else
         resp.write item.price
-        
       end #if !item.nil?
 
     else
