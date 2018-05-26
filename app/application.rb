@@ -9,6 +9,8 @@ class Application
     if req.path.match(/items/)
       item_name = req.path.split("/item/").last
       item = @@items.find {|item| item.name == item_name}
+
+      resp.write item.name
     else
       resp.write "Page Not Found"
       resp.status = 404
