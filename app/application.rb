@@ -9,7 +9,8 @@ class Application
     if req.path.match(/items/)
     else
       resp.write "Page Not Found"
-      resp.status =
+      resp.status = 404
+    end #if path match /items/
   end #call
 
 end #Application
