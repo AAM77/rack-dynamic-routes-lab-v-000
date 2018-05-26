@@ -15,6 +15,7 @@ class Application
       else
         resp.write "We don't have that item."
         resp.status = 404
+      end # !item.nil?
     else
       resp.write "Page Not Found"
       resp.status = 404
