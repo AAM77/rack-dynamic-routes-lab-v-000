@@ -11,8 +11,9 @@ class Application
       item = @@items.find {|i| i.name == item_name}
 
       if !item.nil?
-
-      resp.write item.price
+        resp.write item.price
+      else
+        resp.write "We don't have that item"
     else
       resp.write "Page Not Found"
       resp.status = 404
