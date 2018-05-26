@@ -12,7 +12,7 @@ class Application
 
 
 
-      if !@@items.include?(item)
+      if !@@items.include?(item_name)
         resp.write item.price
       else
         resp.write "Item not found"
@@ -28,6 +28,6 @@ class Application
   end #call
 
   def item_search
-  end #search 
+  end #search
 
 end #Application
