@@ -11,10 +11,10 @@ class Application
       item = @@items.find {|i| i.name == item_name}
 
       if !@@items.include?(item)
+        resp.write item.price
+      else
         resp.write "Item not found"
         resp.status = 400
-      else
-        resp.write item.price
       end #if !item.nil?
 
     else
