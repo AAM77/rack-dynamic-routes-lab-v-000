@@ -21,6 +21,8 @@ class Application
       resp.write "Page Not Found"
       resp.status = 404
     end #if path match /items/
+
+    resp.finish
   end #call
 
 end #Application
