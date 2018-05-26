@@ -25,12 +25,6 @@ class Application
     resp.finish
   end #call
 
-  def item_search(item)
-    if @@items.include?(item)
-      return item.price
-    else
-      return "Item not found"
-      
   end #search
 
 end #Application
